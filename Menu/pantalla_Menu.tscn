@@ -1,0 +1,73 @@
+[gd_scene load_steps=10 format=3 uid="uid://ddsm6wvrxtby4"]
+
+[ext_resource type="Script" uid="uid://b5w0kkihm2185" path="res://Menu/_menu.gd" id="1_5omtb"]
+[ext_resource type="AudioStream" uid="uid://c4kpfpsxc2lr7" path="res://Menu/Audios/mouse-click-sound.mp3" id="2_8x0a2"]
+[ext_resource type="Texture2D" uid="uid://c67ffiip2hysr" path="res://Menu/ChatGPT Image 14 nov 2025, 03_59_44 p.m..png" id="2_pbfrw"]
+[ext_resource type="AudioStream" uid="uid://wusero0sjk16" path="res://Menu/Audios/Ikoliks - Shockwave.mp3" id="2_udthn"]
+[ext_resource type="Texture2D" uid="uid://dljqntlykho85" path="res://Imagenes/boton_nivel1.png" id="3_25n3p"]
+[ext_resource type="Texture2D" uid="uid://1y8my3ytscin" path="res://Imagenes/boton_nivel2.png" id="4_8x0a2"]
+[ext_resource type="Texture2D" uid="uid://b8xgc0bbud6mt" path="res://Imagenes/boton_nivel3.png" id="5_t0lqb"]
+[ext_resource type="Texture2D" uid="uid://d1nocidume36b" path="res://Imagenes/boton_nivel4.png" id="6_n423r"]
+[ext_resource type="Texture2D" uid="uid://dxxqffnke366r" path="res://Imagenes/Boton_quit.png" id="7_v2ujd"]
+
+[node name="Pantalla_menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5omtb")
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_8x0a2")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1198.0
+offset_bottom = 804.0
+texture = ExtResource("2_pbfrw")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 12.0
+offset_right = 888.0
+offset_bottom = 792.0
+
+[node name="Nivel1" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_25n3p")
+flat = true
+
+[node name="Nivel2" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("4_8x0a2")
+flat = true
+
+[node name="Nivel3" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("5_t0lqb")
+flat = true
+
+[node name="Nivel4" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("6_n423r")
+flat = true
+
+[node name="Button_salir" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("7_v2ujd")
+flat = true
+
+[node name="audio_fondo_menu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_udthn")
+volume_db = -31.486
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/Nivel1" to="." method="_on_nivel_1_pressed"]
+[connection signal="pressed" from="VBoxContainer/Nivel2" to="." method="_on_nivel_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/Nivel3" to="." method="_on_nivel_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/Nivel4" to="." method="_on_nivel_4_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button_salir" to="." method="_on_button_salir_pressed"]

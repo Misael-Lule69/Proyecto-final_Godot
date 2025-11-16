@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wusero0sjk16"
+path="res://.godot/imported/Ikoliks - Shockwave.mp3-ce8f990e02595a11e0ce4a6d86b5738b.mp3str"
+
+[deps]
+
+source_file="res://Menu/Audios/Ikoliks - Shockwave.mp3"
+dest_files=["res://.godot/imported/Ikoliks - Shockwave.mp3-ce8f990e02595a11e0ce4a6d86b5738b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
