@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://cg3g4l7h0plt3" path="res://Personaje/character_body_2d.gd" id="1_lr5g2"]
 [ext_resource type="Texture2D" uid="uid://326s47hwu5uk" path="res://Imagenes/boton_pausa.png" id="2_hsrrt"]
+[ext_resource type="AudioStream" uid="uid://h81b6lbkihqd" path="res://Menu/Audios/8-bit-game-over-sound-effect-331435.mp3" id="3_hsrrt"]
 [ext_resource type="Texture2D" uid="uid://cqfhk3ll2we1s" path="res://Personaje/santasprites/png/Dead (1).png" id="3_njdoy"]
 [ext_resource type="Texture2D" uid="uid://bga5bwgb1geb5" path="res://Personaje/santasprites/png/Dead (2).png" id="4_hsrrt"]
 [ext_resource type="Texture2D" uid="uid://o4ka7vkrdrtv" path="res://Personaje/santasprites/png/Dead (3).png" id="5_ocxwk"]
-[ext_resource type="AudioStream" uid="uid://56rgrcy16o8l" path="res://Personaje/sonidos/cats-meow-81221.mp3" id="6_t148j"]
 [ext_resource type="Texture2D" uid="uid://d1rapo1sffl7r" path="res://Personaje/santasprites/png/Dead (4).png" id="6_wywcd"]
 [ext_resource type="Texture2D" uid="uid://ccwqq8aw2g5cy" path="res://Personaje/santasprites/png/Dead (5).png" id="7_ib17r"]
 [ext_resource type="Texture2D" uid="uid://c16jkgtq2owk3" path="res://Personaje/santasprites/png/Dead (6).png" id="8_ps5eb"]
@@ -397,7 +397,7 @@ position = Vector2(1, -9)
 shape = SubResource("RectangleShape2D_c3rv3")
 
 [node name="MuerteSound" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
-stream = ExtResource("6_t148j")
+stream = ExtResource("3_hsrrt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(11, -5.999996)

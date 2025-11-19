@@ -11,7 +11,6 @@
 [ext_resource type="VideoStream" uid="uid://dp411o81kadal" path="res://Videos/Video_gatito.ogv" id="10_t0lqb"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8x0a2"]
-load_path = "res://.godot/imported/ChatGPT Image 14 nov 2025, 03_59_44 p.m..png-2298b7f52e93195a12f37e7da38cf4d7.ctex"
 
 [node name="Pantalla_menu" type="Control"]
 layout_mode = 3
