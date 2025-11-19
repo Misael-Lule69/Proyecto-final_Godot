@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 180.0
 const JUMP_VELOCITY = -400.0
-const DEATH_HEIGHT = 700
+const DEATH_HEIGHT = 1000
 const GRAVITY = 980 
 
 # La variable 'is_attacking' ha sido eliminada.
@@ -85,7 +85,7 @@ func die() -> void:
 	await get_tree().create_timer(2.5).timeout
 	
 	Global.scene = get_tree().current_scene.scene_file_path
-	get_tree().change_scene_to_file("res://GameOver.tscn")
+	get_tree().change_scene_to_file("res://Pantalla-muerte/game_over.tscn")
 
 # La función '_on_animation_finished' (lógica de ataque) ha sido eliminada.
 

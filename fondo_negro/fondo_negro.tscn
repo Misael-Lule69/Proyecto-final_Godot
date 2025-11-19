@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfmtwuup6v8yo"]
+
+[ext_resource type="Texture2D" uid="uid://dru3bsq6jap3l" path="res://fondo_negro/pared-de-ladrillo-con-efecto-de-estilo-grunge.jpg" id="1_1o2gn"]
+
+[node name="fondo_negro" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(5500, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(-1340, 406)
+scale = Vector2(1.275, 0.904)
+texture = ExtResource("1_1o2gn")
+centered = false

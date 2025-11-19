@@ -83,6 +83,7 @@ flat = true
 [node name="audio_fondo_menu" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_n423r")
 autoplay = true
+parameters/looping = true
 
 [connection signal="pressed" from="VBoxContainer/Nivel1" to="." method="_on_nivel_1_pressed"]
 [connection signal="pressed" from="VBoxContainer/Nivel2" to="." method="_on_nivel_2_pressed"]
