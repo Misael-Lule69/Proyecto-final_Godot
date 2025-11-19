@@ -383,7 +383,7 @@ script = ExtResource("1_lr5g2")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 
-[node name="Button" type="Button" parent="CharacterBody2D/Camera2D"]
+[node name="button_pausa" type="Button" parent="CharacterBody2D/Camera2D"]
 offset_left = 400.0
 offset_top = -401.0
 offset_right = 598.0
@@ -407,4 +407,4 @@ animation = &"walk"
 frame = 1
 frame_progress = 0.07281118
 
-[connection signal="pressed" from="CharacterBody2D/Camera2D/Button" to="CharacterBody2D" method="_on_button_pressed"]
+[connection signal="pressed" from="CharacterBody2D/Camera2D/button_pausa" to="CharacterBody2D" method="_on_button_pressed"]

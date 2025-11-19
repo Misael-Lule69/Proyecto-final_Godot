@@ -108,4 +108,4 @@ func animaciones(direction) -> void:
 
 
 func _on_button_pressed() -> void:
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Pantalla_pausa/pantalla_pausa.tscn")
