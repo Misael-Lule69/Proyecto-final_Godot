@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://b5w0kkihm2185" path="res://Menu/_menu.gd" id="1_5omtb"]
 [ext_resource type="AudioStream" uid="uid://c4kpfpsxc2lr7" path="res://Menu/Audios/mouse-click-sound.mp3" id="2_8x0a2"]
-[ext_resource type="Texture2D" uid="uid://c67ffiip2hysr" path="res://Menu/ChatGPT Image 14 nov 2025, 03_59_44 p.m..png" id="2_pbfrw"]
 [ext_resource type="Texture2D" uid="uid://dljqntlykho85" path="res://Imagenes/boton_nivel1.png" id="3_25n3p"]
 [ext_resource type="Texture2D" uid="uid://1y8my3ytscin" path="res://Imagenes/boton_nivel2.png" id="4_8x0a2"]
 [ext_resource type="Texture2D" uid="uid://b8xgc0bbud6mt" path="res://Imagenes/boton_nivel3.png" id="5_t0lqb"]
@@ -10,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://dxxqffnke366r" path="res://Imagenes/Boton_quit.png" id="7_v2ujd"]
 [ext_resource type="AudioStream" uid="uid://c5i3dacfg36ys" path="res://Menu/Audios/pixel-adventure-382649.mp3" id="10_n423r"]
 [ext_resource type="VideoStream" uid="uid://dp411o81kadal" path="res://Videos/Video_gatito.ogv" id="10_t0lqb"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8x0a2"]
+load_path = "res://.godot/imported/ChatGPT Image 14 nov 2025, 03_59_44 p.m..png-2298b7f52e93195a12f37e7da38cf4d7.ctex"
 
 [node name="Pantalla_menu" type="Control"]
 layout_mode = 3
@@ -28,7 +30,7 @@ visible = false
 layout_mode = 0
 offset_right = 1198.0
 offset_bottom = 804.0
-texture = ExtResource("2_pbfrw")
+texture = SubResource("CompressedTexture2D_8x0a2")
 expand_mode = 1
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
@@ -36,9 +38,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1.0
-offset_right = 2641.0
-offset_bottom = 1360.0
+offset_left = -11.000008
+offset_top = -38.0
+offset_right = 3051.4995
+offset_bottom = 1322.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.4, 0.4)

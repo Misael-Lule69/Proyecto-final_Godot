@@ -38,25 +38,27 @@ func _handle_transition(target_scene_path: String) -> void:
 	if target_scene_path == "quit":
 		get_tree().quit()
 	else:
+		# --- ¡ESTA ES LA LÍNEA CORREGIDA! ---
+		# Ahora usa la variable para cargar la escena correcta.
 		get_tree().change_scene_to_file(target_scene_path)
 
 
 # --- SEÑALES DE LOS BOTONES (Ahora todos completos) ---
 
 func _on_nivel_1_pressed() -> void:
-	_handle_transition("res://Nivel1.tscn")
+	_handle_transition("res://Nivel 1/nivel_1.tscn")
 
 func _on_nivel_2_pressed() -> void:
-	_handle_transition("res://Nivel2.tscn")
+	_handle_transition("res://Nivel2/nivel_2.tscn")
 
 
 func _on_nivel_3_pressed() -> void:
-	_handle_transition("res://Nivel3.tscn")
+	_handle_transition("res://Nivel3/nivel_3.tscn")
 
 
 func _on_nivel_4_pressed() -> void:
 	# CORRECCIÓN: Llamar a la transición para el nivel 4
-	_handle_transition("res://Nivel4.tscn") 
+	_handle_transition("res://Nivel4/nivel_4.tscn")
 
 
 func _on_button_salir_pressed() -> void:

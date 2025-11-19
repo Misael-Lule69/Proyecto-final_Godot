@@ -1,0 +1,53 @@
+[gd_scene load_steps=6 format=3 uid="uid://cp5lqh61j13x6"]
+
+[ext_resource type="Script" uid="uid://d0e3ltsm3h4eo" path="res://Pantalla_pausa/pantalla_pausa.gd" id="1_djv6c"]
+[ext_resource type="VideoStream" uid="uid://bwm81r3hch8ll" path="res://Videos/video_pausa.ogv" id="1_uo6kr"]
+[ext_resource type="Texture2D" uid="uid://y13gnok7dess" path="res://Imagenes/Boton_play.png" id="2_plfjc"]
+[ext_resource type="Texture2D" uid="uid://bkv7oiuxy1i4l" path="res://Imagenes/Boton_restart.png" id="3_djv6c"]
+[ext_resource type="Texture2D" uid="uid://dxxqffnke366r" path="res://Imagenes/Boton_quit.png" id="4_ol53d"]
+
+[node name="pantalla_pausa" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_djv6c")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_uo6kr")
+autoplay = true
+loop = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VideoStreamPlayer"]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 238.0
+offset_right = 977.0
+offset_bottom = 733.0
+
+[node name="resume" type="Button" parent="VideoStreamPlayer/VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("2_plfjc")
+flat = true
+
+[node name="restart" type="Button" parent="VideoStreamPlayer/VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_djv6c")
+flat = true
+
+[node name="quit" type="Button" parent="VideoStreamPlayer/VBoxContainer"]
+layout_mode = 2
+icon = ExtResource("4_ol53d")
+flat = true
+
+[connection signal="pressed" from="VideoStreamPlayer/VBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/VBoxContainer/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="VideoStreamPlayer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
