@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2gfh2fsi0w2h"
+path="res://.godot/imported/AdhesiveWombat - Night Shade ♫ NO COPYRIGHT 8-bit Music(MP3_160K).mp3-7943a96d853b8cd522b48992034fa97c.mp3str"
+
+[deps]
+
+source_file="res://Nivel4/Music/AdhesiveWombat - Night Shade ♫ NO COPYRIGHT 8-bit Music(MP3_160K).mp3"
+dest_files=["res://.godot/imported/AdhesiveWombat - Night Shade ♫ NO COPYRIGHT 8-bit Music(MP3_160K).mp3-7943a96d853b8cd522b48992034fa97c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
