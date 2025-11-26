@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://kmq755t1paes"]
+
+[ext_resource type="Script" uid="uid://grytyy2dpyux" path="res://Personaje/hud.gd" id="1_g4nlk"]
+[ext_resource type="Texture2D" uid="uid://b8pvhbhe4qc0q" path="res://Nivel 1/Coin_Gems/MonedaD.png" id="1_o4h1r"]
+[ext_resource type="FontFile" uid="uid://djyqobp1hnduk" path="res://fonts/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="2_pr164"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pr164"]
+atlas = ExtResource("1_o4h1r")
+region = Rect2(0, 0, 16, 16)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_g4nlk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 12.0
+offset_top = 19.0
+offset_right = 76.0
+offset_bottom = 83.0
+pivot_offset = Vector2(20, 20)
+texture = SubResource("AtlasTexture_pr164")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 84.0
+offset_top = 31.0
+offset_right = 125.0
+offset_bottom = 91.0
+theme_override_fonts/font = ExtResource("2_pr164")
+theme_override_font_sizes/font_size = 50
+text = "x"
+
+[node name="contador_monedas" type="Label" parent="."]
+offset_left = 130.0
+offset_top = 36.0
+offset_right = 193.0
+offset_bottom = 96.0
+theme_override_fonts/font = ExtResource("2_pr164")
+theme_override_font_sizes/font_size = 50
+text = "0"

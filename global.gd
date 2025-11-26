@@ -5,3 +5,5 @@ var scene = ""
 
 # Añade esta línea para guardar la ruta del último nivel
 var last_level_path = ""
+
+var monedas : int = 0

@@ -1,0 +1,150 @@
+[gd_scene load_steps=34 format=3 uid="uid://djkkh0pnfnnon"]
+
+[ext_resource type="Script" uid="uid://cuhx40yh1vgis" path="res://label.gd" id="1_jpbny"]
+[ext_resource type="FontFile" uid="uid://djyqobp1hnduk" path="res://fonts/Peaberry Font Family/Peaberry Base/PeaberryBase.ttf" id="1_o5jcs"]
+[ext_resource type="Texture2D" uid="uid://bvmiyvny5whig" path="res://Imagenes/PNG/Gold/Gold_1.png" id="3_ynk56"]
+[ext_resource type="Texture2D" uid="uid://dulrthauccksh" path="res://Imagenes/PNG/Gold/Gold_2.png" id="4_lwlxe"]
+[ext_resource type="Texture2D" uid="uid://dcd6gll4eptpr" path="res://Imagenes/PNG/Gold/Gold_3.png" id="5_0gw24"]
+[ext_resource type="Texture2D" uid="uid://boe2lgccywbd5" path="res://Imagenes/PNG/Gold/Gold_4.png" id="6_b6toc"]
+[ext_resource type="Texture2D" uid="uid://btcexu0elu8dk" path="res://Imagenes/PNG/Gold/Gold_5.png" id="7_8uidq"]
+[ext_resource type="Texture2D" uid="uid://c7i20wq05ux68" path="res://Imagenes/PNG/Gold/Gold_6.png" id="8_ebgbb"]
+[ext_resource type="Texture2D" uid="uid://5cjjh8gxvxtt" path="res://Imagenes/PNG/Gold/Gold_7.png" id="9_etaod"]
+[ext_resource type="Texture2D" uid="uid://cj841d1rqj2wq" path="res://Imagenes/PNG/Gold/Gold_8.png" id="10_w10mc"]
+[ext_resource type="Texture2D" uid="uid://dxvan6qyuy0nn" path="res://Imagenes/PNG/Gold/Gold_9.png" id="11_axpm0"]
+[ext_resource type="Texture2D" uid="uid://xryb4q4yt701" path="res://Imagenes/PNG/Gold/Gold_10.png" id="12_eirhc"]
+[ext_resource type="Texture2D" uid="uid://bd8eqnjpfot8h" path="res://Imagenes/PNG/Gold/Gold_11.png" id="13_2ekwi"]
+[ext_resource type="Texture2D" uid="uid://r4pg5ym510wc" path="res://Imagenes/PNG/Gold/Gold_12.png" id="14_1se7o"]
+[ext_resource type="Texture2D" uid="uid://c52ubm3rpw106" path="res://Imagenes/PNG/Gold/Gold_13.png" id="15_5q23d"]
+[ext_resource type="Texture2D" uid="uid://cikwvyfem7ayk" path="res://Imagenes/PNG/Gold/Gold_14.png" id="16_45jd4"]
+[ext_resource type="Texture2D" uid="uid://cjw2sbbuaeinj" path="res://Imagenes/PNG/Gold/Gold_15.png" id="17_dt7fn"]
+[ext_resource type="Texture2D" uid="uid://cwp6wxh234vhm" path="res://Imagenes/PNG/Gold/Gold_16.png" id="18_loso1"]
+[ext_resource type="Texture2D" uid="uid://wri7sbql1dbk" path="res://Imagenes/PNG/Gold/Gold_17.png" id="19_086bd"]
+[ext_resource type="Texture2D" uid="uid://ciohryf6b415" path="res://Imagenes/PNG/Gold/Gold_18.png" id="20_eckn5"]
+[ext_resource type="Texture2D" uid="uid://b8q1tj0am7pvj" path="res://Imagenes/PNG/Gold/Gold_19.png" id="21_688ov"]
+[ext_resource type="Texture2D" uid="uid://cpsh1syqbbncr" path="res://Imagenes/PNG/Gold/Gold_20.png" id="22_mwlxy"]
+[ext_resource type="Texture2D" uid="uid://dfy18mhpgdet5" path="res://Imagenes/PNG/Gold/Gold_21.png" id="23_03kvl"]
+[ext_resource type="Texture2D" uid="uid://c2noycnmnscmb" path="res://Imagenes/PNG/Gold/Gold_22.png" id="24_tmshs"]
+[ext_resource type="Texture2D" uid="uid://b8jw6fh2taiwk" path="res://Imagenes/PNG/Gold/Gold_23.png" id="25_6re2g"]
+[ext_resource type="Texture2D" uid="uid://btxlhq67wivmy" path="res://Imagenes/PNG/Gold/Gold_24.png" id="26_bi012"]
+[ext_resource type="Texture2D" uid="uid://cimhjtmycwoyk" path="res://Imagenes/PNG/Gold/Gold_25.png" id="27_lpwoi"]
+[ext_resource type="Texture2D" uid="uid://djfi2er1u6qhe" path="res://Imagenes/PNG/Gold/Gold_26.png" id="28_gq7l1"]
+[ext_resource type="Texture2D" uid="uid://ctalwupxy238k" path="res://Imagenes/PNG/Gold/Gold_27.png" id="29_02be4"]
+[ext_resource type="Texture2D" uid="uid://b8cblf1h6jl1s" path="res://Imagenes/PNG/Gold/Gold_28.png" id="30_lfk88"]
+[ext_resource type="Texture2D" uid="uid://c86lwpt8ex335" path="res://Imagenes/PNG/Gold/Gold_29.png" id="31_wiyoe"]
+[ext_resource type="Texture2D" uid="uid://d53tq6xovsrc" path="res://Imagenes/PNG/Gold/Gold_30.png" id="32_l76ee"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dlcx4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ynk56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_lwlxe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0gw24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_b6toc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8uidq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ebgbb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_etaod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_w10mc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_axpm0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_eirhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2ekwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1se7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_5q23d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_45jd4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_dt7fn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_loso1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_086bd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_eckn5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_688ov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_mwlxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_03kvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_tmshs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_6re2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_bi012")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_lpwoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_gq7l1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_02be4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_lfk88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_wiyoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_l76ee")
+}],
+"loop": true,
+"name": &"gold",
+"speed": 20.0
+}]
+
+[node name="Node2D" type="CanvasLayer"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 131.0
+offset_top = 42.0
+offset_right = 284.0
+offset_bottom = 129.0
+theme_override_fonts/font = ExtResource("1_o5jcs")
+theme_override_font_sizes/font_size = 60
+text = "0"
+script = ExtResource("1_jpbny")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Label"]
+position = Vector2(-59, 26)
+scale = Vector2(0.10590585, 0.091755316)
+sprite_frames = SubResource("SpriteFrames_dlcx4")
+animation = &"gold"

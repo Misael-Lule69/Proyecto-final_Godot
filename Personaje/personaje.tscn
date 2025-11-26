@@ -1,4 +1,4 @@
-[gd_scene load_steps=90 format=3 uid="uid://xhe5sv2tqkyl"]
+[gd_scene load_steps=91 format=3 uid="uid://xhe5sv2tqkyl"]
 
 [ext_resource type="Script" uid="uid://cg3g4l7h0plt3" path="res://Personaje/character_body_2d.gd" id="1_lr5g2"]
 [ext_resource type="Texture2D" uid="uid://326s47hwu5uk" path="res://Imagenes/boton_pausa.png" id="2_hsrrt"]
@@ -87,6 +87,7 @@
 [ext_resource type="Texture2D" uid="uid://cjsgoxj7c2gwi" path="res://Personaje/santasprites/png/Walk (11).png" id="84_tuvtx"]
 [ext_resource type="Texture2D" uid="uid://b87mwgtw3mi11" path="res://Personaje/santasprites/png/Walk (12).png" id="85_8535l"]
 [ext_resource type="Texture2D" uid="uid://bdnkl2xns1se6" path="res://Personaje/santasprites/png/Walk (13).png" id="86_3y72m"]
+[ext_resource type="PackedScene" uid="uid://djkkh0pnfnnon" path="res://coin/contador_coin.tscn" id="88_ocxwk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3rv3"]
 size = Vector2(42, 82)
@@ -376,9 +377,9 @@ animations = [{
 "speed": 20.0
 }]
 
-[node name="Personaje" type="Node2D"]
+[node name="Personaje" type="Node2D" groups=["player"]]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["player"]]
 script = ExtResource("1_lr5g2")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
@@ -406,5 +407,7 @@ sprite_frames = SubResource("SpriteFrames_2wfue")
 animation = &"walk"
 frame = 1
 frame_progress = 0.07281118
+
+[node name="Node2D" parent="CharacterBody2D" instance=ExtResource("88_ocxwk")]
 
 [connection signal="pressed" from="CharacterBody2D/Camera2D/button_pausa" to="CharacterBody2D" method="_on_button_pressed"]

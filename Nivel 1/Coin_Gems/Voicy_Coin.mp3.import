@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://brh7kcybpftt8"
+path="res://.godot/imported/Voicy_Coin.mp3-932d98385e0426a42f671dc1b41a7025.mp3str"
+
+[deps]
+
+source_file="res://Nivel 1/Coin_Gems/Voicy_Coin.mp3"
+dest_files=["res://.godot/imported/Voicy_Coin.mp3-932d98385e0426a42f671dc1b41a7025.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

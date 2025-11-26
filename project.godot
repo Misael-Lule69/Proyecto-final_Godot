@@ -24,6 +24,10 @@ Global="*res://global.gd"
 window/size/viewport_width=1200
 window/size/viewport_height=800
 
+[global_group]
+
+player=""
+
 [input]
 
 ui_left={
