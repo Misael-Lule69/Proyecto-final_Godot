@@ -1,388 +1,397 @@
-[gd_scene load_steps=91 format=3 uid="uid://xhe5sv2tqkyl"]
+[gd_scene load_steps=94 format=3 uid="uid://xhe5sv2tqkyl"]
 
 [ext_resource type="Script" uid="uid://cg3g4l7h0plt3" path="res://Personaje/character_body_2d.gd" id="1_lr5g2"]
 [ext_resource type="Texture2D" uid="uid://326s47hwu5uk" path="res://Imagenes/boton_pausa.png" id="2_hsrrt"]
 [ext_resource type="AudioStream" uid="uid://h81b6lbkihqd" path="res://Menu/Audios/8-bit-game-over-sound-effect-331435.mp3" id="3_hsrrt"]
-[ext_resource type="Texture2D" uid="uid://cqfhk3ll2we1s" path="res://Personaje/santasprites/png/Dead (1).png" id="3_njdoy"]
-[ext_resource type="Texture2D" uid="uid://bga5bwgb1geb5" path="res://Personaje/santasprites/png/Dead (2).png" id="4_hsrrt"]
-[ext_resource type="Texture2D" uid="uid://o4ka7vkrdrtv" path="res://Personaje/santasprites/png/Dead (3).png" id="5_ocxwk"]
-[ext_resource type="Texture2D" uid="uid://d1rapo1sffl7r" path="res://Personaje/santasprites/png/Dead (4).png" id="6_wywcd"]
-[ext_resource type="Texture2D" uid="uid://ccwqq8aw2g5cy" path="res://Personaje/santasprites/png/Dead (5).png" id="7_ib17r"]
-[ext_resource type="Texture2D" uid="uid://c16jkgtq2owk3" path="res://Personaje/santasprites/png/Dead (6).png" id="8_ps5eb"]
-[ext_resource type="Texture2D" uid="uid://cyisvvp4f0p0n" path="res://Personaje/santasprites/png/Dead (7).png" id="9_fwm2x"]
-[ext_resource type="Texture2D" uid="uid://dxrypejjrhq5x" path="res://Personaje/santasprites/png/Dead (8).png" id="10_avujl"]
-[ext_resource type="Texture2D" uid="uid://iqwhaqsg7bs4" path="res://Personaje/santasprites/png/Dead (9).png" id="11_lqx4y"]
-[ext_resource type="Texture2D" uid="uid://dny51yhmq0rec" path="res://Personaje/santasprites/png/Dead (10).png" id="12_qai4v"]
-[ext_resource type="Texture2D" uid="uid://6ep4u64ltn6r" path="res://Personaje/santasprites/png/Dead (11).png" id="13_13cdg"]
-[ext_resource type="Texture2D" uid="uid://w5txhks1qyxw" path="res://Personaje/santasprites/png/Dead (12).png" id="14_k6ggx"]
-[ext_resource type="Texture2D" uid="uid://2swlct4mrehg" path="res://Personaje/santasprites/png/Dead (13).png" id="15_5ypt3"]
-[ext_resource type="Texture2D" uid="uid://bnby513pov1jj" path="res://Personaje/santasprites/png/Dead (14).png" id="16_jdnr7"]
-[ext_resource type="Texture2D" uid="uid://bwemajhoncjw" path="res://Personaje/santasprites/png/Dead (15).png" id="17_wub12"]
-[ext_resource type="Texture2D" uid="uid://bdp4w6umkmpda" path="res://Personaje/santasprites/png/Dead (16).png" id="18_va73r"]
-[ext_resource type="Texture2D" uid="uid://b3ifexk4vr84x" path="res://Personaje/santasprites/png/Dead (17).png" id="19_ufpj8"]
-[ext_resource type="Texture2D" uid="uid://ctgfhsm2bwcjj" path="res://Personaje/santasprites/png/Idle (1).png" id="20_8ivto"]
-[ext_resource type="Texture2D" uid="uid://uwj1do2ljr7f" path="res://Personaje/santasprites/png/Idle (2).png" id="21_tyu3j"]
-[ext_resource type="Texture2D" uid="uid://cnn0m1bqdti3t" path="res://Personaje/santasprites/png/Idle (3).png" id="22_1xyd2"]
-[ext_resource type="Texture2D" uid="uid://oa2i62y7w46y" path="res://Personaje/santasprites/png/Idle (4).png" id="23_mp7d1"]
-[ext_resource type="Texture2D" uid="uid://c7a5jia262i5h" path="res://Personaje/santasprites/png/Idle (5).png" id="24_ncch7"]
-[ext_resource type="Texture2D" uid="uid://b4ins4o0ffys1" path="res://Personaje/santasprites/png/Idle (6).png" id="25_0o4o7"]
-[ext_resource type="Texture2D" uid="uid://dqxef4wwvrenu" path="res://Personaje/santasprites/png/Idle (7).png" id="26_gf63r"]
-[ext_resource type="Texture2D" uid="uid://by4xip6aefqmn" path="res://Personaje/santasprites/png/Idle (8).png" id="27_ds81r"]
-[ext_resource type="Texture2D" uid="uid://chrtyd1lfob5x" path="res://Personaje/santasprites/png/Idle (9).png" id="28_4ipbl"]
-[ext_resource type="Texture2D" uid="uid://dxckvmlex3noo" path="res://Personaje/santasprites/png/Idle (10).png" id="29_q4ept"]
-[ext_resource type="Texture2D" uid="uid://dct7akhcni3bt" path="res://Personaje/santasprites/png/Idle (11).png" id="30_jgk01"]
-[ext_resource type="Texture2D" uid="uid://dmbvx4sq7dg8y" path="res://Personaje/santasprites/png/Idle (12).png" id="31_26n3k"]
-[ext_resource type="Texture2D" uid="uid://dkbwsh8i7xw5i" path="res://Personaje/santasprites/png/Idle (13).png" id="32_1d6yi"]
-[ext_resource type="Texture2D" uid="uid://bhhtb37ny44vv" path="res://Personaje/santasprites/png/Idle (14).png" id="33_lvnrx"]
-[ext_resource type="Texture2D" uid="uid://cwata1c260nf3" path="res://Personaje/santasprites/png/Idle (15).png" id="34_mh4h8"]
-[ext_resource type="Texture2D" uid="uid://c2keoqdayp41a" path="res://Personaje/santasprites/png/Idle (16).png" id="35_1dhem"]
-[ext_resource type="Texture2D" uid="uid://cmhkf2rlrp3lx" path="res://Personaje/santasprites/png/Jump (1).png" id="36_nmder"]
-[ext_resource type="Texture2D" uid="uid://cj5p6s0557mn0" path="res://Personaje/santasprites/png/Jump (2).png" id="37_py12j"]
-[ext_resource type="Texture2D" uid="uid://xpypm160gf4i" path="res://Personaje/santasprites/png/Jump (3).png" id="38_q1vwl"]
-[ext_resource type="Texture2D" uid="uid://dq7qgjqvva70y" path="res://Personaje/santasprites/png/Jump (4).png" id="39_ixody"]
-[ext_resource type="Texture2D" uid="uid://swuqh6fegoab" path="res://Personaje/santasprites/png/Jump (5).png" id="40_gx86i"]
-[ext_resource type="Texture2D" uid="uid://sh7m2e3nactv" path="res://Personaje/santasprites/png/Jump (6).png" id="41_845pg"]
-[ext_resource type="Texture2D" uid="uid://381q448toljp" path="res://Personaje/santasprites/png/Jump (7).png" id="42_b0n3g"]
-[ext_resource type="Texture2D" uid="uid://g6vtluqcyyot" path="res://Personaje/santasprites/png/Jump (8).png" id="43_pijpr"]
-[ext_resource type="Texture2D" uid="uid://bv7rhha42n55y" path="res://Personaje/santasprites/png/Jump (9).png" id="44_eyuw8"]
-[ext_resource type="Texture2D" uid="uid://df143fkcqv3fb" path="res://Personaje/santasprites/png/Jump (10).png" id="45_ky8vd"]
-[ext_resource type="Texture2D" uid="uid://okanavr52vvp" path="res://Personaje/santasprites/png/Jump (11).png" id="46_vffyg"]
-[ext_resource type="Texture2D" uid="uid://u5ft5ymd736a" path="res://Personaje/santasprites/png/Jump (12).png" id="47_auruf"]
-[ext_resource type="Texture2D" uid="uid://d1o44icsmb33l" path="res://Personaje/santasprites/png/Jump (13).png" id="48_cfxs0"]
-[ext_resource type="Texture2D" uid="uid://bogy5yrtfa6sg" path="res://Personaje/santasprites/png/Jump (14).png" id="49_lm6jh"]
-[ext_resource type="Texture2D" uid="uid://cdap8r7rlxd2y" path="res://Personaje/santasprites/png/Jump (15).png" id="50_bfowt"]
-[ext_resource type="Texture2D" uid="uid://c0weuuplvigwf" path="res://Personaje/santasprites/png/Jump (16).png" id="51_qpdcy"]
-[ext_resource type="Texture2D" uid="uid://dwsp3rkvhoufj" path="res://Personaje/santasprites/png/Run (1).png" id="52_8mxkd"]
-[ext_resource type="Texture2D" uid="uid://bdv21a2i7tohw" path="res://Personaje/santasprites/png/Run (2).png" id="53_fkk74"]
-[ext_resource type="Texture2D" uid="uid://i0kyv5b0t1q5" path="res://Personaje/santasprites/png/Run (3).png" id="54_xlsgi"]
-[ext_resource type="Texture2D" uid="uid://bj8chynp7s1gt" path="res://Personaje/santasprites/png/Run (4).png" id="55_xbjjt"]
-[ext_resource type="Texture2D" uid="uid://d0qsju2ohue0e" path="res://Personaje/santasprites/png/Run (5).png" id="56_7fq65"]
-[ext_resource type="Texture2D" uid="uid://br6ooa2b3mdha" path="res://Personaje/santasprites/png/Run (6).png" id="57_copk6"]
-[ext_resource type="Texture2D" uid="uid://dsvx5kgyyxvfu" path="res://Personaje/santasprites/png/Run (7).png" id="58_krqqg"]
-[ext_resource type="Texture2D" uid="uid://dabw2cks2rtur" path="res://Personaje/santasprites/png/Run (8).png" id="59_6ntbg"]
-[ext_resource type="Texture2D" uid="uid://dk5yh4vnrfi7v" path="res://Personaje/santasprites/png/Run (9).png" id="60_oknp0"]
-[ext_resource type="Texture2D" uid="uid://b35p6rblyl7c8" path="res://Personaje/santasprites/png/Run (10).png" id="61_cc0fj"]
-[ext_resource type="Texture2D" uid="uid://b0vgnhxgg5xby" path="res://Personaje/santasprites/png/Run (11).png" id="62_74gaq"]
-[ext_resource type="Texture2D" uid="uid://by8fdeqksij7n" path="res://Personaje/santasprites/png/Slide (1).png" id="63_lhuwr"]
-[ext_resource type="Texture2D" uid="uid://dff655vwbuqmd" path="res://Personaje/santasprites/png/Slide (2).png" id="64_cvv8t"]
-[ext_resource type="Texture2D" uid="uid://bkrsgtqh35sj7" path="res://Personaje/santasprites/png/Slide (3).png" id="65_khhap"]
-[ext_resource type="Texture2D" uid="uid://b4pkkw8783h3n" path="res://Personaje/santasprites/png/Slide (4).png" id="66_vma0n"]
-[ext_resource type="Texture2D" uid="uid://32whl8as7bqq" path="res://Personaje/santasprites/png/Slide (5).png" id="67_1n3pu"]
-[ext_resource type="Texture2D" uid="uid://bj5xvowj2diw6" path="res://Personaje/santasprites/png/Slide (6).png" id="68_tcf67"]
-[ext_resource type="Texture2D" uid="uid://btqn68y1gqs7q" path="res://Personaje/santasprites/png/Slide (7).png" id="69_gv3ol"]
-[ext_resource type="Texture2D" uid="uid://cjix1i3jcl1uo" path="res://Personaje/santasprites/png/Slide (8).png" id="70_g5btd"]
-[ext_resource type="Texture2D" uid="uid://bmrxnjb1v67jx" path="res://Personaje/santasprites/png/Slide (9).png" id="71_inu3x"]
-[ext_resource type="Texture2D" uid="uid://c10a08ebt6p8m" path="res://Personaje/santasprites/png/Slide (10).png" id="72_euour"]
-[ext_resource type="Texture2D" uid="uid://bqodlxhy1wofq" path="res://Personaje/santasprites/png/Slide (11).png" id="73_yeyh8"]
-[ext_resource type="Texture2D" uid="uid://cy01ocs1k5xg5" path="res://Personaje/santasprites/png/Walk (1).png" id="74_aw265"]
-[ext_resource type="Texture2D" uid="uid://deayjri53v2ow" path="res://Personaje/santasprites/png/Walk (2).png" id="75_mb1u6"]
-[ext_resource type="Texture2D" uid="uid://ddwx8uid780ii" path="res://Personaje/santasprites/png/Walk (3).png" id="76_3cia7"]
-[ext_resource type="Texture2D" uid="uid://3wlsws7ca2t0" path="res://Personaje/santasprites/png/Walk (4).png" id="77_loe70"]
-[ext_resource type="Texture2D" uid="uid://b4nqgielsddjb" path="res://Personaje/santasprites/png/Walk (5).png" id="78_hh3wc"]
-[ext_resource type="Texture2D" uid="uid://kq6sceb1eehm" path="res://Personaje/santasprites/png/Walk (6).png" id="79_667o4"]
-[ext_resource type="Texture2D" uid="uid://ci2c4025aulb8" path="res://Personaje/santasprites/png/Walk (7).png" id="80_xuhoy"]
-[ext_resource type="Texture2D" uid="uid://cx3a740itg8jl" path="res://Personaje/santasprites/png/Walk (8).png" id="81_obva6"]
-[ext_resource type="Texture2D" uid="uid://1rs4246aglfh" path="res://Personaje/santasprites/png/Walk (9).png" id="82_y687e"]
-[ext_resource type="Texture2D" uid="uid://dmfi00mlk6nsn" path="res://Personaje/santasprites/png/Walk (10).png" id="83_bb4m4"]
-[ext_resource type="Texture2D" uid="uid://cjsgoxj7c2gwi" path="res://Personaje/santasprites/png/Walk (11).png" id="84_tuvtx"]
-[ext_resource type="Texture2D" uid="uid://b87mwgtw3mi11" path="res://Personaje/santasprites/png/Walk (12).png" id="85_8535l"]
-[ext_resource type="Texture2D" uid="uid://bdnkl2xns1se6" path="res://Personaje/santasprites/png/Walk (13).png" id="86_3y72m"]
 [ext_resource type="PackedScene" uid="uid://djkkh0pnfnnon" path="res://coin/contador_coin.tscn" id="88_ocxwk"]
+[ext_resource type="Texture2D" uid="uid://svmi7pym56bp" path="res://Personaje/animations/die/ninja-die_00.png" id="89_axy26"]
+[ext_resource type="Texture2D" uid="uid://dvmrdmlw3kjb6" path="res://Personaje/animations/die/ninja-die_01.png" id="90_61brb"]
+[ext_resource type="Texture2D" uid="uid://8svi1novu577" path="res://Personaje/animations/die/ninja-die_02.png" id="91_ve5nh"]
+[ext_resource type="Texture2D" uid="uid://cfrgd8p7yjst2" path="res://Personaje/animations/die/ninja-die_03.png" id="92_hbx5j"]
+[ext_resource type="Texture2D" uid="uid://ddobedhjtt0qj" path="res://Personaje/animations/die/ninja-die_04.png" id="93_8rmmk"]
+[ext_resource type="Texture2D" uid="uid://btjadxix62hog" path="res://Personaje/animations/die/ninja-die_05.png" id="94_tj115"]
+[ext_resource type="Texture2D" uid="uid://crxae2ghl41xf" path="res://Personaje/animations/die/ninja-die_06.png" id="95_0hsc5"]
+[ext_resource type="Texture2D" uid="uid://do8tm72xa5dfg" path="res://Personaje/animations/die/ninja-die_07.png" id="96_enkd4"]
+[ext_resource type="Texture2D" uid="uid://blmingmdrp54n" path="res://Personaje/animations/die/ninja-die_08.png" id="97_2nlcd"]
+[ext_resource type="Texture2D" uid="uid://exf3n5xjqjca" path="res://Personaje/animations/die/ninja-die_09.png" id="98_1qj56"]
+[ext_resource type="Texture2D" uid="uid://bwpbpvd2prsyk" path="res://Personaje/animations/die/ninja-die_10.png" id="99_82rq4"]
+[ext_resource type="Texture2D" uid="uid://d1b3t3iclc5yn" path="res://Personaje/animations/die/ninja-die_11.png" id="100_kry66"]
+[ext_resource type="Texture2D" uid="uid://cd6pvo2un37my" path="res://Personaje/animations/die/ninja-die_12.png" id="101_f25vv"]
+[ext_resource type="Texture2D" uid="uid://5d8yddtwh0ec" path="res://Personaje/animations/die/ninja-die_13.png" id="102_cudt3"]
+[ext_resource type="Texture2D" uid="uid://dxdu3syq3cw5b" path="res://Personaje/animations/die/ninja-die_14.png" id="103_dapyk"]
+[ext_resource type="Texture2D" uid="uid://wco7v4gga6f2" path="res://Personaje/animations/die/ninja-die_15.png" id="104_noblx"]
+[ext_resource type="Texture2D" uid="uid://d4hfda8ro405u" path="res://Personaje/animations/die/ninja-die_16.png" id="105_8rvo5"]
+[ext_resource type="Texture2D" uid="uid://b3f64m35vslhw" path="res://Personaje/animations/die/ninja-die_17.png" id="106_3843t"]
+[ext_resource type="Texture2D" uid="uid://dx3e3wakqtid7" path="res://Personaje/animations/die/ninja-die_18.png" id="107_oduq8"]
+[ext_resource type="Texture2D" uid="uid://bxkfo7dwp8xbx" path="res://Personaje/animations/idle active/ninja-idle active_00.png" id="108_4xy5j"]
+[ext_resource type="Texture2D" uid="uid://b7aqwrl5o5a15" path="res://Personaje/animations/idle active/ninja-idle active_01.png" id="109_0wo8l"]
+[ext_resource type="Texture2D" uid="uid://odbdwvih606h" path="res://Personaje/animations/idle active/ninja-idle active_02.png" id="110_4gudw"]
+[ext_resource type="Texture2D" uid="uid://cmf6b8m06eu4u" path="res://Personaje/animations/idle active/ninja-idle active_03.png" id="111_k7c4j"]
+[ext_resource type="Texture2D" uid="uid://bip3g00tes64r" path="res://Personaje/animations/idle active/ninja-idle active_04.png" id="112_cfik2"]
+[ext_resource type="Texture2D" uid="uid://bejwn84tyyt1x" path="res://Personaje/animations/idle active/ninja-idle active_05.png" id="113_u4blc"]
+[ext_resource type="Texture2D" uid="uid://dk1pmvxo74p8q" path="res://Personaje/animations/idle active/ninja-idle active_06.png" id="114_031eg"]
+[ext_resource type="Texture2D" uid="uid://owr1q7pdglf3" path="res://Personaje/animations/idle active/ninja-idle active_07.png" id="115_qu3n0"]
+[ext_resource type="Texture2D" uid="uid://iu1mvnh7cnak" path="res://Personaje/animations/idle active/ninja-idle active_08.png" id="116_m075e"]
+[ext_resource type="Texture2D" uid="uid://cwh153r0i7wa8" path="res://Personaje/animations/idle active/ninja-idle active_09.png" id="117_yyykc"]
+[ext_resource type="Texture2D" uid="uid://bdieorguvcu7u" path="res://Personaje/animations/idle active/ninja-idle active_10.png" id="118_yueds"]
+[ext_resource type="Texture2D" uid="uid://dxokiriwlvl0x" path="res://Personaje/animations/idle active/ninja-idle active_11.png" id="119_knlf2"]
+[ext_resource type="Texture2D" uid="uid://disco0sg73rn0" path="res://Personaje/animations/idle active/ninja-idle active_12.png" id="120_6clnv"]
+[ext_resource type="Texture2D" uid="uid://d2aey27u5mipx" path="res://Personaje/animations/idle active/ninja-idle active_13.png" id="121_qxebd"]
+[ext_resource type="Texture2D" uid="uid://d3qp87dqaltew" path="res://Personaje/animations/idle active/ninja-idle active_14.png" id="122_gf2ue"]
+[ext_resource type="Texture2D" uid="uid://dlpmi8k2dumrr" path="res://Personaje/animations/idle active/ninja-idle active_15.png" id="123_63lqr"]
+[ext_resource type="Texture2D" uid="uid://bkxd748u7eg3x" path="res://Personaje/animations/idle active/ninja-idle active_16.png" id="124_2skv3"]
+[ext_resource type="Texture2D" uid="uid://bl6ebhkphmyrk" path="res://Personaje/animations/idle active/ninja-idle active_17.png" id="125_0dlns"]
+[ext_resource type="Texture2D" uid="uid://psjni1jb63hs" path="res://Personaje/animations/idle active/ninja-idle active_18.png" id="126_nndas"]
+[ext_resource type="Texture2D" uid="uid://bf6udsra6201s" path="res://Personaje/animations/idle active/ninja-idle active_19.png" id="127_uh0gj"]
+[ext_resource type="Texture2D" uid="uid://dvg1nks17vx3b" path="res://Personaje/animations/idle active/ninja-idle active_20.png" id="128_8vmod"]
+[ext_resource type="Texture2D" uid="uid://cm1yamu84onx0" path="res://Personaje/animations/idle active/ninja-idle active_21.png" id="129_j1e71"]
+[ext_resource type="Texture2D" uid="uid://dm3npn5100xaw" path="res://Personaje/animations/idle active/ninja-idle active_22.png" id="130_i20dc"]
+[ext_resource type="Texture2D" uid="uid://b2wwl3pico7ug" path="res://Personaje/animations/idle active/ninja-idle active_23.png" id="131_y27wd"]
+[ext_resource type="Texture2D" uid="uid://bv7fv31lso2ef" path="res://Personaje/animations/idle active/ninja-idle active_24.png" id="132_t1k2x"]
+[ext_resource type="Texture2D" uid="uid://b1lb41ehxhie6" path="res://Personaje/animations/idle active/ninja-idle active_25.png" id="133_bqk51"]
+[ext_resource type="Texture2D" uid="uid://bg440hxv14otm" path="res://Personaje/animations/idle active/ninja-idle active_26.png" id="134_0c61p"]
+[ext_resource type="Texture2D" uid="uid://b75yyk6a085rj" path="res://Personaje/animations/idle active/ninja-idle active_27.png" id="135_sh5bc"]
+[ext_resource type="Texture2D" uid="uid://dfv5udm10bek" path="res://Personaje/animations/idle active/ninja-idle active_28.png" id="136_3a0de"]
+[ext_resource type="Texture2D" uid="uid://dk4s7k5hvber6" path="res://Personaje/animations/pull lever/ninja-pull lever_00.png" id="137_m3247"]
+[ext_resource type="Texture2D" uid="uid://c77gq7attl3s4" path="res://Personaje/animations/pull lever/ninja-pull lever_01.png" id="138_julpp"]
+[ext_resource type="Texture2D" uid="uid://b0xv1a457ei10" path="res://Personaje/animations/pull lever/ninja-pull lever_02.png" id="139_t0sp6"]
+[ext_resource type="Texture2D" uid="uid://cmige8tpy6cho" path="res://Personaje/animations/pull lever/ninja-pull lever_03.png" id="140_a4mee"]
+[ext_resource type="Texture2D" uid="uid://cpncel1s4j0ei" path="res://Personaje/animations/pull lever/ninja-pull lever_04.png" id="141_vigkr"]
+[ext_resource type="Texture2D" uid="uid://bwfrqhm1u3v2i" path="res://Personaje/animations/pull lever/ninja-pull lever_05.png" id="142_6s2ml"]
+[ext_resource type="Texture2D" uid="uid://01j6tnact8m4" path="res://Personaje/animations/pull lever/ninja-pull lever_06.png" id="143_u1uuf"]
+[ext_resource type="Texture2D" uid="uid://d0frqere7q6nv" path="res://Personaje/animations/pull lever/ninja-pull lever_07.png" id="144_ukn1q"]
+[ext_resource type="Texture2D" uid="uid://cu07pl5e3fyp7" path="res://Personaje/animations/pull lever/ninja-pull lever_08.png" id="145_7bqco"]
+[ext_resource type="Texture2D" uid="uid://cwge85yxqon3d" path="res://Personaje/animations/pull lever/ninja-pull lever_09.png" id="146_ni6ke"]
+[ext_resource type="Texture2D" uid="uid://bbh0mygmp5310" path="res://Personaje/animations/pull lever/ninja-pull lever_10.png" id="147_vbb5h"]
+[ext_resource type="Texture2D" uid="uid://crv6pddqrpf34" path="res://Personaje/animations/pull lever/ninja-pull lever_11.png" id="148_5iikd"]
+[ext_resource type="Texture2D" uid="uid://jwl2nuw2efh1" path="res://Personaje/animations/pull lever/ninja-pull lever_12.png" id="149_6kpus"]
+[ext_resource type="Texture2D" uid="uid://c025vrt8oed6q" path="res://Personaje/animations/pull lever/ninja-pull lever_13.png" id="150_0ruu2"]
+[ext_resource type="Texture2D" uid="uid://d1pl16yrfqcx8" path="res://Personaje/animations/pull lever/ninja-pull lever_14.png" id="151_53h3e"]
+[ext_resource type="Texture2D" uid="uid://c2fcqnum53rap" path="res://Personaje/animations/run/ninja-run_00.png" id="152_yuqq7"]
+[ext_resource type="Texture2D" uid="uid://dro4o3l1olugi" path="res://Personaje/animations/run/ninja-run_01.png" id="153_yngnj"]
+[ext_resource type="Texture2D" uid="uid://b166cqtqwj8q3" path="res://Personaje/animations/run/ninja-run_02.png" id="154_rv0po"]
+[ext_resource type="Texture2D" uid="uid://csytws76i1627" path="res://Personaje/animations/run/ninja-run_03.png" id="155_8sgfw"]
+[ext_resource type="Texture2D" uid="uid://koajk35h3wtk" path="res://Personaje/animations/run/ninja-run_04.png" id="156_dd6vc"]
+[ext_resource type="Texture2D" uid="uid://cyod7droi3xaj" path="res://Personaje/animations/run/ninja-run_05.png" id="157_xx1h2"]
+[ext_resource type="Texture2D" uid="uid://k2tkyru186hk" path="res://Personaje/animations/run/ninja-run_06.png" id="158_rc1vc"]
+[ext_resource type="Texture2D" uid="uid://b1i55qgafrds8" path="res://Personaje/animations/run/ninja-run_07.png" id="159_llqe0"]
+[ext_resource type="Texture2D" uid="uid://k7nf0bikjgct" path="res://Personaje/animations/run/ninja-run_08.png" id="160_hghw8"]
+[ext_resource type="Texture2D" uid="uid://tpu5d5kpgytf" path="res://Personaje/animations/run/ninja-run_09.png" id="161_a6r81"]
+[ext_resource type="Texture2D" uid="uid://r0a34dnj5c6v" path="res://Personaje/animations/run/ninja-run_10.png" id="162_1e6ff"]
+[ext_resource type="Texture2D" uid="uid://1c1hg7ycr0m8" path="res://Personaje/animations/run/ninja-run_11.png" id="163_jemym"]
+[ext_resource type="Texture2D" uid="uid://l01m8w3dynvm" path="res://Personaje/animations/slash/ninja-slash_00.png" id="164_yhajm"]
+[ext_resource type="Texture2D" uid="uid://b4hmqgp0a1vas" path="res://Personaje/animations/slash/ninja-slash_01.png" id="165_c736s"]
+[ext_resource type="Texture2D" uid="uid://c86hakjllmk8x" path="res://Personaje/animations/slash/ninja-slash_02.png" id="166_5n08r"]
+[ext_resource type="Texture2D" uid="uid://c0un6l4yeiwk2" path="res://Personaje/animations/slash/ninja-slash_03.png" id="167_arhdl"]
+[ext_resource type="Texture2D" uid="uid://ca2jm3gtemcy0" path="res://Personaje/animations/slash/ninja-slash_04.png" id="168_3ojbp"]
+[ext_resource type="Texture2D" uid="uid://bsq76gmptbq42" path="res://Personaje/animations/slash/ninja-slash_05.png" id="169_wjc12"]
+[ext_resource type="Texture2D" uid="uid://7vip2jcahcl0" path="res://Personaje/animations/slash/ninja-slash_06.png" id="170_jqxdy"]
+[ext_resource type="Texture2D" uid="uid://duku6hmxkq0hl" path="res://Personaje/animations/slash/ninja-slash_07.png" id="171_1kijn"]
+[ext_resource type="Texture2D" uid="uid://cab1tfs0rj8ds" path="res://Personaje/animations/slash/ninja-slash_08.png" id="172_xpajd"]
+[ext_resource type="Texture2D" uid="uid://d3prbfth0md2x" path="res://Personaje/animations/slash/ninja-slash_09.png" id="173_6lvyb"]
+[ext_resource type="Texture2D" uid="uid://chqduabyrvcnt" path="res://Personaje/animations/slash/ninja-slash_10.png" id="174_cx7o2"]
+[ext_resource type="Texture2D" uid="uid://h333i33ydw1r" path="res://Personaje/animations/slash/ninja-slash_11.png" id="175_odhtj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c3rv3"]
 size = Vector2(42, 82)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_2wfue"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_5ku8x"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_njdoy")
+"texture": ExtResource("89_axy26")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_hsrrt")
+"texture": ExtResource("90_61brb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_ocxwk")
+"texture": ExtResource("91_ve5nh")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_wywcd")
+"texture": ExtResource("92_hbx5j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_ib17r")
+"texture": ExtResource("93_8rmmk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_ps5eb")
+"texture": ExtResource("94_tj115")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_fwm2x")
+"texture": ExtResource("95_0hsc5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_avujl")
+"texture": ExtResource("96_enkd4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_lqx4y")
+"texture": ExtResource("97_2nlcd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_qai4v")
+"texture": ExtResource("98_1qj56")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_13cdg")
+"texture": ExtResource("99_82rq4")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_k6ggx")
+"texture": ExtResource("100_kry66")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_5ypt3")
+"texture": ExtResource("101_f25vv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_jdnr7")
+"texture": ExtResource("102_cudt3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_wub12")
+"texture": ExtResource("103_dapyk")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_va73r")
+"texture": ExtResource("104_noblx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_ufpj8")
+"texture": ExtResource("105_8rvo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_3843t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_oduq8")
 }],
 "loop": true,
-"name": &"Dead",
+"name": &"die_cat",
 "speed": 20.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("20_8ivto")
+"texture": ExtResource("108_4xy5j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_tyu3j")
+"texture": ExtResource("109_0wo8l")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_1xyd2")
+"texture": ExtResource("110_4gudw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_mp7d1")
+"texture": ExtResource("111_k7c4j")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_ncch7")
+"texture": ExtResource("112_cfik2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_0o4o7")
+"texture": ExtResource("113_u4blc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_gf63r")
+"texture": ExtResource("114_031eg")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_ds81r")
+"texture": ExtResource("115_qu3n0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_4ipbl")
+"texture": ExtResource("116_m075e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_q4ept")
+"texture": ExtResource("117_yyykc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_jgk01")
+"texture": ExtResource("118_yueds")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_26n3k")
+"texture": ExtResource("119_knlf2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_1d6yi")
+"texture": ExtResource("120_6clnv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_lvnrx")
+"texture": ExtResource("121_qxebd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("34_mh4h8")
+"texture": ExtResource("122_gf2ue")
 }, {
 "duration": 1.0,
-"texture": ExtResource("35_1dhem")
+"texture": ExtResource("123_63lqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_2skv3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_0dlns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_nndas")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_uh0gj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_8vmod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_j1e71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_i20dc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_y27wd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_t1k2x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_bqk51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_0c61p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_sh5bc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_3a0de")
 }],
 "loop": true,
-"name": &"idle",
-"speed": 20.0
+"name": &"idle_cat",
+"speed": 30.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("36_nmder")
+"texture": ExtResource("137_m3247")
 }, {
 "duration": 1.0,
-"texture": ExtResource("37_py12j")
+"texture": ExtResource("138_julpp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("38_q1vwl")
+"texture": ExtResource("139_t0sp6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("39_ixody")
+"texture": ExtResource("140_a4mee")
 }, {
 "duration": 1.0,
-"texture": ExtResource("40_gx86i")
+"texture": ExtResource("141_vigkr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("41_845pg")
+"texture": ExtResource("142_6s2ml")
 }, {
 "duration": 1.0,
-"texture": ExtResource("42_b0n3g")
+"texture": ExtResource("143_u1uuf")
 }, {
 "duration": 1.0,
-"texture": ExtResource("43_pijpr")
+"texture": ExtResource("144_ukn1q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("44_eyuw8")
+"texture": ExtResource("145_7bqco")
 }, {
 "duration": 1.0,
-"texture": ExtResource("45_ky8vd")
+"texture": ExtResource("146_ni6ke")
 }, {
 "duration": 1.0,
-"texture": ExtResource("46_vffyg")
+"texture": ExtResource("147_vbb5h")
 }, {
 "duration": 1.0,
-"texture": ExtResource("47_auruf")
+"texture": ExtResource("148_5iikd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("48_cfxs0")
+"texture": ExtResource("149_6kpus")
 }, {
 "duration": 1.0,
-"texture": ExtResource("49_lm6jh")
+"texture": ExtResource("150_0ruu2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("50_bfowt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("51_qpdcy")
+"texture": ExtResource("151_53h3e")
 }],
 "loop": true,
-"name": &"jump",
-"speed": 20.0
+"name": &"pull_cat",
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("52_8mxkd")
+"texture": ExtResource("152_yuqq7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("53_fkk74")
+"texture": ExtResource("153_yngnj")
 }, {
 "duration": 1.0,
-"texture": ExtResource("54_xlsgi")
+"texture": ExtResource("154_rv0po")
 }, {
 "duration": 1.0,
-"texture": ExtResource("55_xbjjt")
+"texture": ExtResource("155_8sgfw")
 }, {
 "duration": 1.0,
-"texture": ExtResource("56_7fq65")
+"texture": ExtResource("156_dd6vc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("57_copk6")
+"texture": ExtResource("157_xx1h2")
 }, {
 "duration": 1.0,
-"texture": ExtResource("58_krqqg")
+"texture": ExtResource("158_rc1vc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("59_6ntbg")
+"texture": ExtResource("159_llqe0")
 }, {
 "duration": 1.0,
-"texture": ExtResource("60_oknp0")
+"texture": ExtResource("160_hghw8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("61_cc0fj")
+"texture": ExtResource("161_a6r81")
 }, {
 "duration": 1.0,
-"texture": ExtResource("62_74gaq")
+"texture": ExtResource("162_1e6ff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_jemym")
 }],
-"loop": true,
-"name": &"run",
-"speed": 20.0
+"loop": false,
+"name": &"run_cat",
+"speed": 30.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("63_lhuwr")
+"texture": ExtResource("164_yhajm")
 }, {
 "duration": 1.0,
-"texture": ExtResource("64_cvv8t")
+"texture": ExtResource("165_c736s")
 }, {
 "duration": 1.0,
-"texture": ExtResource("65_khhap")
+"texture": ExtResource("166_5n08r")
 }, {
 "duration": 1.0,
-"texture": ExtResource("66_vma0n")
+"texture": ExtResource("167_arhdl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("67_1n3pu")
+"texture": ExtResource("168_3ojbp")
 }, {
 "duration": 1.0,
-"texture": ExtResource("68_tcf67")
+"texture": ExtResource("169_wjc12")
 }, {
 "duration": 1.0,
-"texture": ExtResource("69_gv3ol")
+"texture": ExtResource("170_jqxdy")
 }, {
 "duration": 1.0,
-"texture": ExtResource("70_g5btd")
+"texture": ExtResource("171_1kijn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("71_inu3x")
+"texture": ExtResource("172_xpajd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("72_euour")
+"texture": ExtResource("173_6lvyb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("73_yeyh8")
+"texture": ExtResource("174_cx7o2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_odhtj")
 }],
-"loop": true,
-"name": &"slide",
-"speed": 20.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("74_aw265")
-}, {
-"duration": 1.0,
-"texture": ExtResource("75_mb1u6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("76_3cia7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("77_loe70")
-}, {
-"duration": 1.0,
-"texture": ExtResource("78_hh3wc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("79_667o4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("80_xuhoy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("81_obva6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("82_y687e")
-}, {
-"duration": 1.0,
-"texture": ExtResource("83_bb4m4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("84_tuvtx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("85_8535l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("86_3y72m")
-}],
-"loop": true,
-"name": &"walk",
+"loop": false,
+"name": &"slash_cat",
 "speed": 20.0
 }]
 
 [node name="Personaje" type="Node2D" groups=["player"]]
+position = Vector2(601, 394)
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["player"]]
 script = ExtResource("1_lr5g2")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(-699, -532)
 
 [node name="button_pausa" type="Button" parent="CharacterBody2D/Camera2D"]
 offset_left = 400.0
@@ -394,19 +403,18 @@ flat = true
 expand_icon = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(1, -9)
+position = Vector2(-730, -521)
 shape = SubResource("RectangleShape2D_c3rv3")
 
 [node name="MuerteSound" type="AudioStreamPlayer2D" parent="CharacterBody2D"]
+position = Vector2(-714, -538)
 stream = ExtResource("3_hsrrt")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(11, -5.999996)
-scale = Vector2(0.13490362, 0.1548362)
-sprite_frames = SubResource("SpriteFrames_2wfue")
-animation = &"walk"
-frame = 1
-frame_progress = 0.07281118
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="CharacterBody2D"]
+position = Vector2(-723.99994, -531)
+scale = Vector2(0.10741257, 0.17080782)
+sprite_frames = SubResource("SpriteFrames_5ku8x")
+animation = &"slash_cat"
 
 [node name="Node2D" parent="CharacterBody2D" instance=ExtResource("88_ocxwk")]
 

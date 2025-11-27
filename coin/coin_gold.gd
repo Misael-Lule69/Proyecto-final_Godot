@@ -1,31 +1,31 @@
 extends Area2D
 
 @onready var mg = $AnimatedSprite2D
-@onready var audio = $AudioStreamPlayer2D # Referencia al nodo de audio
+@onready var audio = $AudioStreamPlayer2D
+# 1. NUEVA REFERENCIA a las partículas
+@onready var particulas =$CPUParticles2D
 
-# Variable para evitar que la moneda se recoja dos veces mientras suena
 var recogida = false 
 
 func _ready() -> void:
 	mg.play("gold_coin")
 
 func _on_body_entered(body: Node2D) -> void:
-	# Verificamos si es el jugador Y si la moneda no ha sido recogida aún
 	if body.is_in_group("player") and not recogida:
-		recogida = true # Marcamos como recogida inmediatamente
-		
-		# 1. Sumar puntos
+		recogida = true 
 		Global.monedas += 1
-		print("Total monedas: ", Global.monedas)
 		
-		# 2. Hacer la moneda invisible (parece que desapareció)
+		# 2. Escondemos la moneda
 		mg.visible = false 
 		
-		# 3. Reproducir el sonido
+		# 3. ¡ACTIVAMOS LA EXPLOSIÓN!
+		particulas.emitting = true
+		
+		# 4. Reproducimos sonido
 		audio.play()
 		
-		# 4. Esperar a que el sonido termine
+		# 5. Esperamos (el tiempo que tarda el audio suele ser
+		# suficiente para que las partículas terminen su animación)
 		await audio.finished
 		
-		# 5. AHORA SÍ, borramos el objeto
 		queue_free()

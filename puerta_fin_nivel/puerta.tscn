@@ -1,0 +1,87 @@
+[gd_scene load_steps=13 format=3 uid="uid://c3357hx4qeh6b"]
+
+[ext_resource type="Texture2D" uid="uid://dq1o6yt4c4hul" path="res://puerta_fin_nivel/spr_portal_strip8.png" id="1_4i1uy"]
+[ext_resource type="Script" uid="uid://xqxrd6uufcbc" path="res://puerta_fin_nivel/puerta.gd" id="1_spn2a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_spn2a"]
+atlas = ExtResource("1_4i1uy")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y648h"]
+atlas = ExtResource("1_4i1uy")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dbsrd"]
+atlas = ExtResource("1_4i1uy")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_irglu"]
+atlas = ExtResource("1_4i1uy")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m2pff"]
+atlas = ExtResource("1_4i1uy")
+region = Rect2(512, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tkc7n"]
+atlas = ExtResource("1_4i1uy")
+region = Rect2(640, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ftvod"]
+atlas = ExtResource("1_4i1uy")
+region = Rect2(768, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u4ri8"]
+atlas = ExtResource("1_4i1uy")
+region = Rect2(896, 0, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0u34c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_spn2a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y648h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dbsrd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_irglu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m2pff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tkc7n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ftvod")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u4ri8")
+}],
+"loop": true,
+"name": &"idle_door",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bbb1"]
+size = Vector2(84, 128)
+
+[node name="Puerta" type="Area2D"]
+script = ExtResource("1_spn2a")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+light_mask = 7
+z_index = -1
+sprite_frames = SubResource("SpriteFrames_0u34c")
+animation = &"idle_door"
+frame_progress = 0.7112771
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_1bbb1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

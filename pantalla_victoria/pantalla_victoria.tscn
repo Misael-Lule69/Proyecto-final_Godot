@@ -1,0 +1,58 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdw26kgvwnvj7"]
+
+[ext_resource type="Script" uid="uid://d2fy30vlgk3eb" path="res://pantalla_victoria/pantalla_victoria.gd" id="1_dcvyb"]
+[ext_resource type="VideoStream" uid="uid://bnmdeldo5agcl" path="res://pantalla_victoria/victory.ogv" id="2_hih4g"]
+[ext_resource type="FontFile" uid="uid://835upw0xhp40" path="res://fonts/Peaberry Font Family/Peaberry Monospace/PeaberryMono.woff" id="2_nsh7j"]
+
+[node name="PantallaVictoria" type="CanvasLayer"]
+script = ExtResource("1_dcvyb")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.06666667)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1782.4998
+offset_bottom = 1204.9998
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.4, 0.4)
+stream = ExtResource("2_hih4g")
+autoplay = true
+expand = true
+loop = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.5
+offset_top = -29.0
+offset_right = 83.5
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 8
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.65222704, 2.0455568e-06, 1.4439226e-07, 1)
+theme_override_fonts/font = ExtResource("2_nsh7j")
+theme_override_font_sizes/font_size = 60
+text = "SIGUIENTE NIVEL
+"
+flat = true
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://dv88slf0gev5o"]
+[gd_scene load_steps=29 format=4 uid="uid://dv88slf0gev5o"]
 
 [ext_resource type="PackedScene" uid="uid://xhe5sv2tqkyl" path="res://Personaje/personaje.tscn" id="1_uv0oq"]
 [ext_resource type="Texture2D" uid="uid://dfg7g3f4q5hxn" path="res://Nivel 1/Tiles/bush.png" id="2_kee6k"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://blxek5t0hxvlx" path="res://Nivel 1/wintertileset/png/Object/Tree_2.png" id="12_u0vbf"]
 [ext_resource type="Texture2D" uid="uid://dwoqqjckqqmvv" path="res://Nivel 1/wintertileset/png/Object/Tree_1.png" id="13_tscyf"]
 [ext_resource type="Texture2D" uid="uid://cyla8wm2skrns" path="res://Nivel 1/wintertileset/png/Object/Igloo.png" id="14_3t7ho"]
+[ext_resource type="PackedScene" uid="uid://c3357hx4qeh6b" path="res://puerta_fin_nivel/puerta.tscn" id="16_3t7ho"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f6g6o"]
 texture = ExtResource("2_kee6k")
@@ -2733,12 +2734,13 @@ parameters/looping = true
 motion_mirroring = Vector2(2550, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(-1340, -727)
+position = Vector2(-1325, -743)
 scale = Vector2(1.275, 0.86965483)
 texture = ExtResource("8_f6g6o")
 centered = false
 
 [node name="fondo_negro" parent="ParallaxBackground" instance=ExtResource("9_f6g6o")]
+position = Vector2(1456, -461)
 
 [node name="tiles_nieves" type="TileMapLayer" parent="."]
 scale = Vector2(0.5, 0.5)
@@ -2768,3 +2770,7 @@ position = Vector2(1436, -99)
 
 [node name="Node2D8" parent="." instance=ExtResource("2_tscyf")]
 position = Vector2(1797, -97)
+
+[node name="Puerta" parent="." instance=ExtResource("16_3t7ho")]
+position = Vector2(4931, 226)
+siguiente_nivel = "uid://thj4fdpcme14"
