@@ -411,8 +411,8 @@ position = Vector2(-714, -538)
 stream = ExtResource("3_hsrrt")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(-723.99994, -531)
-scale = Vector2(0.10741257, 0.17080782)
+position = Vector2(-724, -531)
+scale = Vector2(0.107413, 0.170808)
 sprite_frames = SubResource("SpriteFrames_5ku8x")
 animation = &"slash_cat"
 
