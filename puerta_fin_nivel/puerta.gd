@@ -1,7 +1,7 @@
 extends Area2D
 
 # --- ESTAS SON LAS LÍNEAS QUE TE FALTABAN ---
-@export var monedas_necesarias : int = 3
+@export var monedas_necesarias : int = 15
 @export_file("*.tscn") var siguiente_nivel 
 # ---------------------------------------------
 

@@ -14,9 +14,8 @@ func _on_restart_pressed() -> void:
 		get_tree().change_scene_to_file(Global.scene)
 	else:
 		# Asegúrate de que esta ruta sea correcta
-		get_tree().change_scene_to_file("res://nivel1.tscn") 
+		get_tree().change_scene_to_file("res://Nivel 1/nivel_1.tscn")
+
 
 func _on_quit_pressed() -> void:
-	# Antes de cambiar de escena, quitar la pausa
-	get_tree().paused = false
 	get_tree().change_scene_to_file("res://Menu/pantalla_Menu.tscn")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=3 uid="uid://xhe5sv2tqkyl"]
+[gd_scene load_steps=95 format=3 uid="uid://xhe5sv2tqkyl"]
 
 [ext_resource type="Script" uid="uid://cg3g4l7h0plt3" path="res://Personaje/character_body_2d.gd" id="1_lr5g2"]
 [ext_resource type="Texture2D" uid="uid://326s47hwu5uk" path="res://Imagenes/boton_pausa.png" id="2_hsrrt"]
@@ -155,7 +155,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("107_oduq8")
 }],
-"loop": true,
+"loop": false,
 "name": &"die_cat",
 "speed": 20.0
 }, {
@@ -384,6 +384,9 @@ animations = [{
 "speed": 20.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ps5eb"]
+size = Vector2(13, 35)
+
 [node name="Personaje" type="Node2D" groups=["player"]]
 position = Vector2(601, 394)
 
@@ -411,11 +414,18 @@ position = Vector2(-714, -538)
 stream = ExtResource("3_hsrrt")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="CharacterBody2D"]
-position = Vector2(-724, -531)
+position = Vector2(-717, -533)
 scale = Vector2(0.107413, 0.170808)
 sprite_frames = SubResource("SpriteFrames_5ku8x")
-animation = &"slash_cat"
+animation = &"die_cat"
 
 [node name="Node2D" parent="CharacterBody2D" instance=ExtResource("88_ocxwk")]
 
+[node name="HitboxAtaque" type="Area2D" parent="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/HitboxAtaque"]
+position = Vector2(-685.5, -514.5)
+shape = SubResource("RectangleShape2D_ps5eb")
+
 [connection signal="pressed" from="CharacterBody2D/Camera2D/button_pausa" to="CharacterBody2D" method="_on_button_pressed"]
+[connection signal="body_entered" from="CharacterBody2D/HitboxAtaque" to="CharacterBody2D" method="_on_hitbox_ataque_body_entered"]
