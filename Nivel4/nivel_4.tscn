@@ -34,7 +34,7 @@
 [ext_resource type="Texture2D" uid="uid://c3smrimjp2kho" path="res://Nivel4/imagenes/Object/Stone.png" id="26_7n7wq"]
 [ext_resource type="Texture2D" uid="uid://dvljtcy1tcsfl" path="res://Nivel4/imagenes/Object/Tree_1.png" id="27_y1bw0"]
 [ext_resource type="Texture2D" uid="uid://7hmj8f11kwt1" path="res://Nivel4/imagenes/Object/Tree_2.png" id="28_agy2p"]
-[ext_resource type="PackedScene" path="res://Nivel4/puerta_fin_nivel/puerta_fin.tscn" id="35_jmy54"]
+[ext_resource type="PackedScene" uid="uid://c3357hx4qeh6b" path="res://puerta_fin_nivel/puerta.tscn" id="35_jmy54"]
 
 [sub_resource type="Curve" id="Curve_e3028"]
 _data = [Vector2(0.00920245, 0.984088), 0.0, 0.0, 0, 0, Vector2(0.95092, 0.19645), 0.0, 0.0, 0, 0, Vector2(0.98773, 0), 0.0, 0.0, 0, 0]
@@ -2283,10 +2283,10 @@ size = Vector2(450.5, 0)
 size = Vector2(509.5, 123)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dfbq5"]
-size = Vector2(511.5, 185.80261)
+size = Vector2(511.5, 185.803)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fjc60"]
-size = Vector2(510.5625, 563.8132)
+size = Vector2(510.563, 563.813)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sprai"]
 size = Vector2(774, 47)
@@ -2344,7 +2344,7 @@ b = Vector2(106, 3)
 position = Vector2(-1652, 0)
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-position = Vector2(607.00006, 81)
+position = Vector2(607, 81)
 scale = Vector2(3, 3)
 amount = 1000
 fixed_fps = 60
@@ -2365,7 +2365,7 @@ motion_mirroring = Vector2(2550, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(-893, -932)
-scale = Vector2(6.651042, 6.9444447)
+scale = Vector2(6.65104, 6.94444)
 texture = ExtResource("3_e3028")
 centered = false
 
@@ -2424,13 +2424,13 @@ shape = SubResource("RectangleShape2D_5chir")
 [node name="StaticBody2D3" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
-position = Vector2(58.25, -71.901306)
+position = Vector2(58.25, -71.9013)
 shape = SubResource("RectangleShape2D_dfbq5")
 
 [node name="StaticBody2D9" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D9"]
-position = Vector2(-479.0934, -418.71973)
+position = Vector2(-479.093, -418.72)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_fjc60")
 
@@ -2447,7 +2447,7 @@ position = Vector2(10, 47)
 shape = SubResource("SegmentShape2D_wlu4u")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D19"]
-position = Vector2(1282.375, 252.75)
+position = Vector2(1282.38, 252.75)
 shape = SubResource("RectangleShape2D_bfne3")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D19"]
@@ -2455,7 +2455,7 @@ position = Vector2(1600, 51.75)
 shape = SubResource("RectangleShape2D_3fd0n")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D19"]
-position = Vector2(2044.125, 528.5)
+position = Vector2(2044.13, 528.5)
 shape = SubResource("RectangleShape2D_d6bwl")
 
 [node name="StaticBody2D21" type="StaticBody2D" parent="."]
@@ -2704,5 +2704,6 @@ position = Vector2(1083, 499)
 shape = SubResource("SegmentShape2D_y1bw0")
 one_way_collision = true
 
-[node name="Puerta_fin" parent="." instance=ExtResource("35_jmy54")]
-position = Vector2(5503, -327)
+[node name="Puerta" parent="." instance=ExtResource("35_jmy54")]
+position = Vector2(5519, -327)
+siguiente_nivel = "uid://ddsm6wvrxtby4"
