@@ -371,7 +371,7 @@ position = Vector2(3285, -63)
 
 [node name="Puerta" parent="." instance=ExtResource("8_uyp5p")]
 position = Vector2(5072, -441)
-siguiente_nivel = "uid://bsro2s2d8trgr"
+siguiente_nivel = "uid://cdw26kgvwnvj7"
 
 [node name="Enemigo6" parent="." instance=ExtResource("7_4gghl")]
 position = Vector2(3836, -256)

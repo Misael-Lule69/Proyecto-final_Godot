@@ -178,8 +178,8 @@ tile_set = SubResource("TileSet_aeg53")
 motion_mirroring = Vector2(1800, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(-837, -996.00006)
-scale = Vector2(6.315972, 6.5288467)
+position = Vector2(-837, -996)
+scale = Vector2(6.31597, 6.52885)
 texture = ExtResource("3_8vl8e")
 centered = false
 
@@ -187,8 +187,8 @@ centered = false
 motion_mirroring = Vector2(1800, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
-position = Vector2(-837, -996.00006)
-scale = Vector2(6.315972, 6.5288467)
+position = Vector2(-837, -996)
+scale = Vector2(6.31597, 6.52885)
 texture = ExtResource("3_8vl8e")
 centered = false
 
